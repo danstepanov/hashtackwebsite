@@ -1,0 +1,466 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:â€™â€™;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+a {
+    text-decoration:none!important;  
+}
+
+body,img,p,h1,h2,h3,h4,h5,h6,form,table,td,ul,ol,li,fieldset { margin:0; padding:0; border:0; }
+p,h1,h2,h3,h4,h5,h6,ul { margin:15px 0; }
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.desktop-body {
+    background-color: #000;
+    cursor: pointer;
+    min-width: 600px;
+}
+
+#chat-icon {
+        background-image: url('../assets/chat-icon.png');
+    position: absolute;
+    width: 600px;
+    height: 682px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -341px;
+    cursor: pointer;
+}
+
+
+#chat-icon-smaller {
+        background-image: url('../assets/chat-icon-smaller.png');
+    position: absolute;
+    width: 500px;
+    height: 568px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -284px;
+    cursor: pointer;
+}
+
+.video-playing {
+    background-color: transparent!important;
+}
+
+.video-playing:hover .li-video-playing a{
+    opacity: .8!important;
+}
+
+.video-playing:hover .dark-gray {
+    opacity: .8!important;
+}
+
+.li-video-playing a{
+    color: #999!important;
+    opacity: .1!important;
+}
+
+.li-video-playing a:hover {
+    color: #FFF!important;
+}
+
+.black {
+    background-image: url('../assets/small-ghost.png')!important;
+}
+
+.black:hover {
+    background-image: url('../assets/small-ghost-999.png')!important;
+}
+
+.dark-gray {
+    background-image: url('../assets/small-ghost-999.png')!important;
+    opacity: .1;
+}
+
+.dark-gray:hover {
+    background-image: url('../assets/small-ghost-white.png')!important;
+}
+
+.FFF {
+    background-image: url('../assets/small-ghost-white.png')!important;
+}
+
+.FFF:hover {
+    background-image: url('../assets/small-ghost-ccc.png')!important;
+}
+
+.on-images a{
+    color: #FFF!important;
+}
+
+.on-images a:hover {
+    color: #CCC!important;
+}
+
+#ios {
+    width: 200px;
+    height: 58px;
+    background-image: url('../assets/apple.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-right: 12px;
+}
+
+#google {
+    width: 170.5px;
+    height: 58px;
+    background-image: url('../assets/google.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-left: 12px;
+}
+
+#download-modal {
+    position: fixed;
+    background-color: transparent;
+    width: 400px;
+    height: 100px;
+    bottom: 24px;
+    z-index: 7;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.desktop-footer 
+{
+    width: 100%;
+    min-width: 600px;
+    bottom: 0;
+    position: fixed;
+    z-index: 6;
+    opacity: 1;
+    background-image: url('../assets/bg.png');
+}
+
+.desktop-footer ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    display: block;
+    left: 50%;
+    opacity: 1;
+}
+
+
+.desktop-footer ul li {
+    position: relative;
+    float: left;
+    display: block;
+    right: 50%;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+    margin: 0 8px 0px 8px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+#download:hover {
+    color: #666;
+}
+
+
+#ghost {
+    
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#video {
+/*    display: none;*/
+}
+
+.gray-color-text {
+    color: #ccc;
+}
+
+#wrapper {
+    position: fixed;
+    z-index: 5;
+    background-image: url('../assets/bg.png');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*#images {
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+*/
+.white-bg {
+    background-color: #FFF;
+}
+
+.hide {
+    display: none;
+}
+
+#play-icon {
+    background-image: url('../assets/play-icon.png');
+    height: 160px;
+    width: 160px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -62px;
+    margin-top: -109px;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    -moz-transition: -transform .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+#chat-icon:hover #play-icon {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+#chat-icon-smaller:hover #play-icon {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+#text {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    color: #FFF;
+    height: 50px;
+    bottom: 72px;
+    margin-top: -25px;
+    vertical-align: middle;
+
+}
+
+#text a {
+    color: #FFF;
+    font-size: 56px;
+/*    text-shadow: 1px 1px 1px #000*/
+}
+
+#text a:hover {
+    color: #CCC;
+}
+
+/*.bg-image {
+    background:url('../assets/breakfast.png');
+    width: 100%;
+    height: 100%;
+}*/
+#slideshow {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 0;
+    background-color: #000;
+    cursor: default;
+}
+
+#m-background {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    background-image: url('../assets/bg.png');
+}
+
+#m-chat {
+    background-image: url('../assets/chat-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 240px;
+    height: 272.625px;
+    left: 50%;
+    margin-left: -120px;
+    top: 50%;
+    margin-top: -136.3125px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.mobile-footer {
+    width: 100%;
+    background-image: url('../assets/bg.png');
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.mobile-footer ul li {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.mobile-footer ul li a {
+    color: #000;
+    cursor: pointer;
+}
+
+.desktop-footer ul li a {
+    color: #000;
+}
+
+footer ul li a:hover {
+    color: #666;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul li a:visited {
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+}
+
+footer ul li a:active {
+    text-decoration: none;
+}
+
+@media screen and (min-aspect-ratio: 16/9) {
+
+    img.bgM {
+        width: 100%!important;
+        height: auto!important;
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        z-index:0!important;    
+        cursor: default;
+    }
+  
+}
+
+
+@media screen and (max-aspect-ratio: 16/9) {
+
+    img.bgM {
+        width: auto!important;
+        height: 100%!important;
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        z-index:0!important;
+        cursor: default;
+    }
+  
+}
+
+
+
+/*img.bgM {
+        width: 100%!important;
+        height: auto!important;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index:0;
+}*/
