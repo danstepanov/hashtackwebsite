@@ -7,12 +7,18 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
 body {
-	background: url("../images/background.png") fixed 50% 50%;
+	background: url("../images/background.png") fixed 100% 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	margin: 0;
+}
+
+.formborder {
+	background: url("../images/formborder.png");
+	background-size: cover;
+	border-radius: 15px;
 }
 
 .darkcontainer {
